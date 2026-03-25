@@ -1,3 +1,3 @@
 .env
-dist/
-tweet-bot
+/dist/
+/tweet-bot
