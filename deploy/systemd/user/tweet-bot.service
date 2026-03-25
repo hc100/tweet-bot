@@ -1,0 +1,15 @@
+[Unit]
+Description=tweet-bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tweet-bot
+ExecStart=/opt/tweet-bot/tweet-bot
+Restart=always
+RestartSec=5
+EnvironmentFile=/opt/tweet-bot/.env
+
+[Install]
+WantedBy=default.target
